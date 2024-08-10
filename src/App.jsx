@@ -1,11 +1,11 @@
 import React from 'react'
-import BlurIn from './components/magicui/blur-in'
+import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div className='bg-red-400'>
-      <BlurIn word='Hello World' />
-    </div>
+    <>
+      <Home />
+    </>
   )
 }
 
