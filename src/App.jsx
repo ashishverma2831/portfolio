@@ -16,29 +16,29 @@ const App = () => {
 
         <Dock className='rounded-full shadow-2xl sticky bottom-8 flex justify-around'>
           <DockIcon className='hover:bg-stone-300/50'>
-            <a href='#about' title='Home'><i className="fa-solid fa-house fa-lg"></i></a>
+            <a className='flex justify-center items-center w-full h-full' href='#about' title='Home'><i className="fa-solid fa-house fa-lg"></i></a>
           </DockIcon>
           <DockIcon className='hover:bg-stone-300/50'>
-            <a href='#education' title='Education'><i className="fa-solid fa-laptop-file fa-lg"></i></a>
+            <a className='flex justify-center items-center w-full h-full' href='#education' title='Education'><i className="fa-solid fa-laptop-file fa-lg"></i></a>
           </DockIcon>
           <DockIcon className='hover:bg-stone-300/50' >
-            <a href='#projects' title='Projects'><i className="fa-solid fa-cube fa-lg"></i></a>
+            <a className='flex justify-center items-center w-full h-full' href='#projects' title='Projects'><i className="fa-solid fa-cube fa-lg"></i></a>
           </DockIcon>
           <DockIcon className='hover:bg-stone-300/50' >
-            <a href='#skills' title='Skills'><i className="fa-solid fa-tools fa-lg"></i></a>
+            <a className='flex justify-center items-center w-full h-full' href='#skills' title='Skills'><i className="fa-solid fa-tools fa-lg"></i></a>
           </DockIcon>
           <DockIcon className='hover:bg-stone-300/50'>
-            <a href='#certificates' title='Certificates'><i className="fa-solid fa-certificate fa-lg"></i></a>
+            <a className='flex justify-center items-center w-full h-full' href='#certificates' title='Certificates'><i className="fa-solid fa-certificate fa-lg"></i></a>
           </DockIcon>
           <span className='h-full w-[1.6px] bg-stone-300/50'></span>
           <DockIcon className='hover:bg-stone-300/50'>
-            <a href='https://github.com/ashishverma2831' title='GitHub'><i className="fa-brands fa-github fa-lg"></i></a>
+            <a target='_blank' className='flex justify-center items-center w-full h-full' href='https://github.com/ashishverma2831' title='GitHub'><i className="fa-brands fa-github fa-lg"></i></a>
           </DockIcon>
           <DockIcon className='hover:bg-stone-300/50'>
-            <a href='https://www.linkedin.com/in/ashishverma2816/' title='LinkedIn'><i className="fa-brands fa-linkedin-in fa-lg"></i></a>
+            <a target='_blank' className='flex justify-center items-center w-full h-full' href='https://www.linkedin.com/in/ashishverma2816/' title='LinkedIn'><i className="fa-brands fa-linkedin-in fa-lg"></i></a>
           </DockIcon>
           <DockIcon className='hover:bg-stone-300/50'>
-            <a href='https://www.instagram.com/ashishverma2342/' title='Instagram'><i className="fa-brands fa-instagram fa-lg"></i></a>
+            <a target='_blank' className='flex justify-center items-center w-full h-full' href='https://www.instagram.com/ashishverma2342/' title='Instagram'><i className="fa-brands fa-instagram fa-lg"></i></a>
           </DockIcon>
         </Dock>
 
