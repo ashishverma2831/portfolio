@@ -41,17 +41,15 @@ const App = () => {
           className="text-4xl font-bold text-black dark:text-white"
           text="Tech Stack"
         />
-        <section>
-          <div>
+        <section className='bg-red-400 flex'>
+          <div className='flex flex-wrap gap-2 bg-yellow-500'>
             {
               slugs.map((slug, index) => {
-                return <span key={index}
-                className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg"
-                >{slug}</span>
+                return <div key={index} className='bg-slate-900'>{slug}</div>
               })
             }
           </div>
-          <div>
+          <div className='w-[300px] bg-red-900'>
             <IconCloud iconSlugs={slugs} />
           </div>
         </section>
