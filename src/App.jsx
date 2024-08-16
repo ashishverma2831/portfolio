@@ -3,6 +3,9 @@ import { Dock, DockIcon } from './components/magicui/dock'
 import { Link } from 'react-router-dom'
 import IconCloud from './components/magicui/icon-cloud'
 import TypingAnimation from './components/magicui/typing-animation'
+import ProjectCard from './components/ui/ProjectCard'
+import BlurIn from './components/magicui/blur-in'
+import { projects } from './Data/data'
 
 const App = () => {
 
@@ -35,13 +38,19 @@ const App = () => {
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-red-400' id='about'>About</section>
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-green-400' id='hero'>Hero</section>
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-yellow-400' id='education'>Education</section>
-      <section className='md:max-w-screen-md mx-auto h-[600px] bg-blue-400' id='projects'>Projects</section>
-      <section className='md:max-w-screen-md mx-auto h-[600px] py-8' id='skills'>
-        <TypingAnimation
-          className="text-4xl font-bold text-black dark:text-white"
-          text="Tech Stack"
-        />
-        <section className='flex justify-center items-center gap-4'>
+      <section className='md:max-w-screen-xl mx-auto bg-blue-400' id='projects'>
+        <BlurIn word='Projects' />
+        <div className='py-8 px-4 bg-red-400 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
+        {
+          projects.map((project,index)=>{
+            return <ProjectCard project={project} index={index} />
+          })
+        }
+        </div>
+      </section>
+      <section className='md:max-w-screen-md mx-auto' id='skills'>
+        <BlurIn word='Skills' />
+        <section className='flex justify-center py-8 items-center gap-4'>
           <div className='w-2/5 flex-row flex flex-wrap py-4 gap-2'>
             {
               slugs.map((slug, index) => {
@@ -58,7 +67,7 @@ const App = () => {
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-sky-400' id='subscribe'>Subscribe</section>
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-pink-400' id='contacts'>Contacts</section>
 
-      <Dock className='rounded-full shadow-2xl sticky bottom-8 flex justify-around'>
+      <Dock className='rounded-full w-[420px] shadow-2xl sticky bottom-8 flex justify-around'>
         <DockIcon className='hover:bg-stone-300/50'>
           <a className='flex justify-center items-center w-full h-full' href='/' title='Home'><i className="fa-solid fa-house fa-lg"></i></a>
         </DockIcon>
