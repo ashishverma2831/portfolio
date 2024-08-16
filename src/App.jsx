@@ -36,20 +36,20 @@ const App = () => {
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-green-400' id='hero'>Hero</section>
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-yellow-400' id='education'>Education</section>
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-blue-400' id='projects'>Projects</section>
-      <section className='md:max-w-screen-md mx-auto h-[600px] bg-orange-400' id='skills'>
+      <section className='md:max-w-screen-md mx-auto h-[600px] py-8' id='skills'>
         <TypingAnimation
           className="text-4xl font-bold text-black dark:text-white"
           text="Tech Stack"
         />
-        <section className='bg-red-400 flex'>
-          <div className='flex flex-wrap gap-2 bg-yellow-500'>
+        <section className='flex justify-center items-center gap-4'>
+          <div className='w-2/5 flex-row flex flex-wrap py-4 gap-2'>
             {
               slugs.map((slug, index) => {
-                return <div key={index} className='bg-slate-900'>{slug}</div>
+                return <button key={index} className='bg-slate-900 hover:bg-slate-800 shadow-lg text-sm py-1.5 px-4 rounded-full text-white capitalize'>{slug}</button>
               })
             }
           </div>
-          <div className='w-[300px] bg-red-900'>
+          <div className='w-3/5'>
             <IconCloud iconSlugs={slugs} />
           </div>
         </section>
