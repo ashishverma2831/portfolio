@@ -38,9 +38,9 @@ const App = () => {
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-red-400' id='about'>About</section>
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-green-400' id='hero'>Hero</section>
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-yellow-400' id='education'>Education</section>
-      <section className='md:max-w-screen-xl mx-auto bg-blue-400' id='projects'>
+      <section className='md:max-w-screen-xl mx-auto' id='projects'>
         <BlurIn word='Projects' />
-        <div className='py-8 px-4 bg-red-400 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
+        <div className='py-8 px-4 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
         {
           projects.map((project,index)=>{
             return <ProjectCard project={project} index={index} />
