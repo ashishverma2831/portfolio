@@ -3,7 +3,7 @@ import React from 'react'
 const ProjectCard = ({project,index}) => {
   return (
     <>
-       <div key={index} className='border m-2 rounded-lg overflow-hidden hover:shadow-xl'>
+       <div key={index+100} className='border m-2 rounded-lg overflow-hidden hover:shadow-xl'>
             <img src={project.image} alt='Project' className='w-full h-[240px] object-cover' />
             <div className='p-2 h-full flex flex-col gap-3'>
                 <p className='text-lg font-semibold'>{project.title}</p>
@@ -11,8 +11,8 @@ const ProjectCard = ({project,index}) => {
                 <div className='flex flex-wrap gap-1'>
                     {/* <p className='bg-stone-300 text-center px-3 py-1.6 rounded-md w-fit'>nextjs</p> */}
                     {
-                        project.techs.map((tech,index)=>{
-                            return <p key={index} className='bg-stone-200/50 text-stone-500 text-center px-3 py-1.6 rounded-md w-fit'>{tech}</p>
+                        project.techs.map((tech,indices)=>{
+                            return <p key={indices+1000} className='bg-stone-200/50 text-stone-500 text-center px-3 py-1.6 rounded-md w-fit'>{tech}</p>
                         })
                     }
                 </div>

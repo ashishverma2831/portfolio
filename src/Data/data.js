@@ -41,3 +41,51 @@ export const projects = [
         sourceLink:'https://github.com/ashishverma2831/Typing-Speed-Project'
     }
 ]
+
+export const skills = [
+    'java',
+    'javascript',
+    'react',
+    'HTML 5',
+    'CSS 3',
+    'nodejs',
+    'mongodb',
+    'android studio',
+    'tailwind css',
+    'bootstrap',
+    'redux',
+    'vite',
+    'nextjs',
+    'express',
+    'firebase',
+    'vercel',
+    'render',
+    'git',
+    'github',
+    'visual studio code',
+    'figma',
+]
+
+export const education = [
+    {
+        title:'Bachelor of Technology in Computer Science and Engineering',
+        institution:'Goel Institute of Technology and Management, Lucknow',
+        duration:'2020 - 2024',
+        marks:'8.19 CGPA',
+        description:'Completed undergraduate program in Computer Science and Engineering, focusing on software development, data structures and algorithms and computer fundamentals. Engaging in practical projects, research initiatives, and collaborative activities to enhance technical skills and foster innovation.'
+    },
+    {
+        title:'Intermediate',
+        institution:'Red Rose Senior Secondary School, Lucknow',
+        duration:'2017 - 2019',
+        marks:'88%',
+        description:'Completed the Intermediate with a focus on Mathematics, Physics, and Chemistry. Developed a strong foundation in core subjects and acquired essential analytical and problem-solving skills.'
+    },
+    {
+        title:'High School',
+        institution:'Red Rose Senior Secondary School, Lucknow',
+        duration:'2016 - 2017',
+        marks:'10 CGPA',
+        description:'Completed the High School with a focus on Mathematics, Science, and English. Acquired fundamental knowledge in various subjects and developed effective study habits and time management skills.'
+    }
+]
