@@ -1,4 +1,3 @@
-
 export const projects = [
     {
         image:'https://res.cloudinary.com/dof7hiljv/image/upload/v1723862693/resume/dvyklclgvquxktaefhnw.png',
@@ -87,5 +86,53 @@ export const education = [
         duration:'2016 - 2017',
         marks:'10 CGPA',
         description:'Completed the High School with a focus on Mathematics, Science, and English. Acquired fundamental knowledge in various subjects and developed effective study habits and time management skills.'
+    }
+]
+
+export const certifications = [
+    {
+        title:'Learn JAVA Programming - Beginner to Master',
+        institution:'Udemy',
+        certificate:'https://res.cloudinary.com/dof7hiljv/image/upload/v1724210054/resume/blzu9gkleuzykzgqmua5.jpg'
+    },
+    {
+        title:'Advance Java Internship Program',
+        institution:'Precursor Info Solutions Pvt. Ltd.',
+        certificate:'https://res.cloudinary.com/dof7hiljv/image/upload/v1724225045/resume/ned38ethp8opkq89c7h4.jpg'
+    },
+    {
+        title:'Advance Java',
+        institution:'Precursor Info Solutions Pvt. Ltd.',
+        certificate:'https://res.cloudinary.com/dof7hiljv/image/upload/v1724225045/resume/nqajcitbml5jmjqspew5.jpg'
+    },
+    {
+        title:'CSS(Basic)',
+        institution:'HackerRank',
+        certificate:'https://res.cloudinary.com/dof7hiljv/image/upload/v1724226572/resume/oghacpwu0vqdx8wjoajs.jpg'
+    },
+    {
+        title:'JavaScript(Basic)',
+        institution:'HackerRank',
+        certificate:'https://res.cloudinary.com/dof7hiljv/image/upload/v1724237396/resume/hcqsen0h9pcco32kvzlr.jpg'
+    },
+    {
+        title:'The Web Developer Bootcamp 2024',
+        institution:'Udemy',
+        certificate:'https://res.cloudinary.com/dof7hiljv/image/upload/v1724210055/resume/gff3u0tctdftsf0qozbt.jpg'
+    },
+    {
+        title:'MERN Stack Development',
+        institution:'Digipodium',
+        certificate:'https://res.cloudinary.com/dof7hiljv/image/upload/v1724225189/resume/j3eqviw31a1bjcuk6owm.jpg'
+    },
+    {
+        title:'MERNG Stack Development',
+        institution:'Digipodium',
+        certificate:'https://res.cloudinary.com/dof7hiljv/image/upload/v1724225046/resume/raky8em4c8zxgztac4pg.jpg'
+    },
+    {
+        title:'Google My Business',
+        institution:'Google',
+        certificate:'https://res.cloudinary.com/dof7hiljv/image/upload/v1724225046/resume/py3qfmjtrcluu0jxqxiy.jpg'
     }
 ]

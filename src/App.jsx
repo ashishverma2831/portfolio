@@ -1,12 +1,11 @@
 import React from 'react'
 import { Dock, DockIcon } from './components/magicui/dock'
-import { Link } from 'react-router-dom'
 import IconCloud from './components/magicui/icon-cloud'
-import TypingAnimation from './components/magicui/typing-animation'
 import ProjectCard from './components/ui/ProjectCard'
 import BlurIn from './components/magicui/blur-in'
-import { projects, education } from './Data/data'
+import { projects, education, certifications } from './Data/data'
 import { skills } from './Data/data'
+import Marquee from './components/magicui/marquee'
 
 const App = () => {
 
@@ -50,7 +49,7 @@ const App = () => {
                     <p className='text-stone-700'>{edu.institution}</p>
                   </div>
                   <div className='w-2/12 flex flex-col justify-between items-end'>
-                    <p className='text-stone-800 text-lg'>{edu.marks}</p>
+                    <p className='text-stone-800 text-lg font-semibold'>{edu.marks}</p>
                     <p className='text-stone-800 text-sm'>{edu.duration}</p>
                   </div>
                 </div>
@@ -84,8 +83,24 @@ const App = () => {
           </div>
         </section>
       </section>
-      <section className='md:max-w-screen-md mx-auto h-[600px] bg-purple-400' id='certificates'>Certificates</section>
-      <section className='md:max-w-screen-md mx-auto h-[600px] bg-sky-400' id='subscribe'>Subscribe</section>
+      <section className='md:max-w-screen-md mx-auto my-6' id='certificates'>
+        <BlurIn word='Certificates' />
+        <div className='py-6'>
+          <Marquee pauseOnHover className="[--duration:20s]">
+            {
+              certifications.map((cert,index)=>{
+                return (
+                  <div key={index}>
+                    <img src={cert.certificate} alt={cert.title} className='h-[420px] w-full object-cover rounded-lg shadow-lg' />
+                    {/* <p>{cert.title}</p>
+                    <p>{cert.institution}</p> */}
+                  </div>
+                )
+              })
+            }
+          </Marquee>
+        </div>
+      </section>
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-pink-400' id='contacts'>Contacts</section>
 
       <Dock className='rounded-full w-[420px] shadow-2xl sticky bottom-8 flex justify-around'>
