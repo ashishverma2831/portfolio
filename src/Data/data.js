@@ -1,3 +1,4 @@
+
 export const projects = [
     {
         image:'https://res.cloudinary.com/dof7hiljv/image/upload/v1723862693/resume/dvyklclgvquxktaefhnw.png',
@@ -134,5 +135,28 @@ export const certifications = [
         title:'Google My Business',
         institution:'Google',
         certificate:'https://res.cloudinary.com/dof7hiljv/image/upload/v1724225046/resume/py3qfmjtrcluu0jxqxiy.jpg'
+    }
+]
+
+export const links = [
+    {
+        title:'CSS Battle',
+        link:'https://cssbattle.dev/player/ashishverma16',
+    },
+    {
+        title:'Codepen',
+        link:'https://codepen.io/xznqtraw-the-decoder',
+    },
+    {
+        title:'HackerRank',
+        link:'https://www.hackerrank.com/profile/ashishverma51021',
+    },
+    {
+        title:'LeetCode',
+        link:'',
+    },
+    {
+        title:'GeeksforGeeks',
+        link:'',
     }
 ]

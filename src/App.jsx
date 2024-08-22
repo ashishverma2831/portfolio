@@ -35,7 +35,8 @@ const App = () => {
 
   return (
     <>
-      <section className='md:max-w-screen-md mx-auto h-[600px] bg-red-400' id='about'>About</section>
+      <section className='md:max-w-screen-md mx-auto h-[600px] bg-red-400' id='about'>
+      </section>
       <section className='md:max-w-screen-md mx-auto h-[600px] bg-green-400' id='hero'>Hero</section>
       <section className='md:max-w-screen-md mx-auto py-6' id='education'>
         <BlurIn word='Education' />
@@ -101,7 +102,10 @@ const App = () => {
           </Marquee>
         </div>
       </section>
-      <section className='md:max-w-screen-md mx-auto h-[600px] bg-pink-400' id='contacts'>Contacts</section>
+      <section className='md:max-w-screen-md mx-auto' id='contacts'>
+        {/* <BlurIn word='Contacts' /> */}
+        <p className='text-sm text-right p-4'>@madeby Ashish Verma</p>
+      </section>
 
       <Dock className='rounded-full w-[420px] shadow-2xl sticky bottom-8 flex justify-around'>
         <DockIcon className='hover:bg-stone-300/50'>
